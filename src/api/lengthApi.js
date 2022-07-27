@@ -4,7 +4,9 @@ export async function getUnits() {
   return unitJson.units;
 }
 
-export async function convertBetween(fromUnit, toUnit, value) {
-  // TODO implement me
-  console.log('I should request a conversion (from, to, of)', fromUnit, toUnit, value);
+export async function convert(value, fromUnit, toUnit) {
+  const queryString = `?from=${fromUnit}&to=${toUnit}&value=${value}`;
+  const convertResponse = await fetch(`http://localhost:8081/super-duper-engine/convert/length${queryString}`);
+  const convertJson = await convertResponse.json();
+  return convertJson;
 }
