@@ -1,12 +1,17 @@
 <template>
   <nav>
     <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/length">Length conversions</router-link> |
+    Temperature conversions
   </nav>
-  <router-view/>
+  <Suspense>
+    <router-view/>
+  </Suspense>
 </template>
 
 <style lang="scss">
+@import 'main.scss';
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

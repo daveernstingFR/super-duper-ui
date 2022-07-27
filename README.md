@@ -1,4 +1,5 @@
 # super-duper-ui
+A super-duper-ui which provides a user interface for the Super-Duper-Engine.
 
 ## Project setup
 ```
@@ -9,16 +10,4 @@ yarn install
 ```
 yarn serve
 ```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Note: This UI requires the super-duper-engine to be running locally in order to function.
